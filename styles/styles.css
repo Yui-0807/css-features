@@ -515,7 +515,7 @@ Dynamic Viewport Demo - dvh
 
 .one {
     background-color: gray;
-    height: 100dvh;
+    height: 100vh;
     border: 10px solid blue;
 }
 
