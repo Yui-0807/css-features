@@ -215,7 +215,7 @@
                 <a href="https://caniuse.com/?search=dynamic%20viewport">Supported Browsers</a>
 
                 <article>
-                    <h3>What is dynamic Viewport?</h3>
+                    <h3>What is Dynamic Viewport?</h3>
 
                     <p>CSS viewport units - ‘vw’ for width and ‘vh’ for height - work well on desktop, but on mobile
                         devices. They do not take into consideration the dynamic UI elements such as the address or the
@@ -225,15 +225,15 @@
                         Dynamic viewport properties provide a way for you to get the viewport dimensions as specified.
                     </p>
 
-                    <h3> Why use Dynamiv ViewPort?</h3>
+                    <h3> Why use Dynamic Viewport?</h3>
 
                     <p>On mobile, the address bar at the top and the navigation bar at the bottom, typically changes in
                         size as the user scrolls up or down. But it does not changes the viewport to respond to the
                         newly available space on the device.
                     </p>
 
-                    <p>That why we have the new viewport units to make the viewport respond to the full specified
-                        dimensionso f the viewport.
+                    <p>That's why we have the new viewport units to make the viewport respond to the full specified
+                        dimensions of the viewport.
                     </p>
 
                     <h3>Dynamic Viewport properties</h3>
@@ -293,7 +293,7 @@
 
                 <article>
 
-                    <h3>What is Container Query</h3>
+                    <h3>What is Container Query?</h3>
 
                     <p>Container query is a CSS propery, that allows you to adjust the style of an element based on its
                         container dimensions and not the viewport. (Mozilla Developer Network, n.d.).</p>
@@ -309,7 +309,7 @@
                         <p>
                             This is a property that helps the browser know which containers you
                             might be interested in checking later for their size. The values that can be used for this
-                            property are size, inline-size, or normal (Mozilla Developer Network, n.d.).
+                            property are size, inline-size, or normal.
                         </p>
 
                         <h4>
@@ -319,8 +319,7 @@
                         </h4>
                         <p>
                             This is another way to give a containment context. Once the container is named, the name can
-                            be used in a container query to target a specific container (Mozilla Developer Network,
-                            n.d.).
+                            be used in a container query to target a specific container.
                         </p>
                         <h4>
                             <li>
@@ -330,7 +329,7 @@
                         <p>
                             This refers to the width of the container. It considers how wide something is and affects
                             how elements are laid out horizontally. It controls how the content fits and looks in that
-                            width (Mozilla Developer Network, n.d.).
+                            width.
                         </p>
                         <h4>
                             <li>
@@ -339,8 +338,7 @@
                         </h4>
                         <p>This considers both the width and the height of a container where content is placed. It
                             deals with how elements are arranged and how large the container holding the content is. It
-                            affects how the layout, appearance, and overall size of the container are controlled
-                            (Mozilla Developer Network, n.d.).
+                            affects how the layout, appearance, and overall size of the container are controlled.
                         </p>
 
                         <h4>
@@ -358,49 +356,45 @@
                     <ul>
                         <li><code>cqw: 1% of the query container width</code></li>
                         <li><code>cqh: 1% of the query container height</code></li>
-                        <li><code>cqi: 1% of a query conntainer inline size</code></li>
+                        <li><code>cqi: 1% of a query container inline size</code></li>
                         <li><code>cqb: 1% of a query container block size</code></li>
                         <li><code>cqmin: The smaller value of either cqi or cqb</code></li>
-                        <li><code>cqmax: The lager value of either cqi or cqb</code></li>
+                        <li><code>cqmax: The larger value of either cqi or cqb</code></li>
                     </ul>
 
-                    <h3>Why use container Query</h3>
+                    <h3>Why use container Query?</h3>
                     <ul>
                         <li>
                             <h4>Specificity</h4>
                         </li>
-                        <p>container query can help you target elements with specific styles at a set dimension without
-                            media query. Previously, if you wanted to change an element based on the device dimensions
-                            you
-                            would use a media query, which is based on the DOM viewport dimensions. That would mean you
-                            need
-                            to make a new media query to change that element styling when the viewport changes.</p>
+                        <p>Container query can help you target elements with specific styles at a set dimension without
+                            media query. Previously, if you wanted to change an element based on the device dimensions, you
+                            would use a media query, which is based on the DOM viewport dimensions. That would mean creating 
+                            a new media query to change that element styling when the viewport changes.</p>
 
                         <li>
                             <h4>Responsiveness</h4>
                         </li>
-                        <p>With container query you can write a query for that <strong>"Container"</strong> and when the
+                        <p>With container query you can write a query for that <strong>"container"</strong> and when the
                             viewport changes the styles will apply to the element as specified, without having to change
                             other elements or writing a new media for that container or other elements/containers.</p>
 
                         <li>
-                            <h4>customization</h4>
+                            <h4>Customization</h4>
                         </li>
                         <p>It allows for more customization options. For example, you may want to modify a sidebar, at a
-                            certain width or height you can set a query to sticky the sidebar at set dimenions, stack in
-                            a
-                            column below set width, or removed at set height, without having to styles other elements
-                            that
-                            is not affected by the viewport size changes. </p>
+                            certain width or height. You can set a query to sticky the sidebar at set dimenions, stack in
+                            a column below a set width, or removed at the set height without having to style other elements
+                            that are not affected by the viewport size changes. </p>
                     </ul>
-                    <h3>Where would you use a Container Query</h3>
+                    <h3>Where would you use a Container Query?</h3>
 
-                    <p>Container query can be used wherever you need to adjust an element’s style or lay based on its
-                        container. It is <strong><em>Kind of</em></strong> an alternative to a media query, but best
+                    <p>Container query can be used wherever you need to adjust an element’s style or layout based on its
+                        container. It is <strong><em>"kind of"</em></strong> an alternative to a media query, but it is best
                         used with media queries as they work in relation to each other.</p>
 
-                    <p>Container queries works like flex and grid, where the styles is applied to the descendant element
-                        of a container. Such as blocks level elements like sections, articles, cards, forms, and
+                    <p>Container queries works like flex and grid, where the styles are applied to the descendant element
+                        of a container. Such as blocks level elements like sections, articles, cards, forms,
                         sidebars and more. Additionally, it could be used for global blocks such as header, footer, and
                         main.
                     </p>
