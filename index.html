@@ -409,7 +409,7 @@
 
                         <article class="product-one">
                             <img src="http://fakeimg.pl/300/#00ff00?text=Image&font=museo" alt="">
-                            <!-- <div class="fakeimg"></div> -->
+                            
                             <h4>Product One</h4>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae magnam inventore
                                 labore iure aperiam necessitatibus, nobis a doloribus accusamus maiores iste iusto
@@ -420,7 +420,7 @@
 
                         <article class="product-two">
                             <img src="http://fakeimg.pl/300/#00ff00?text=Image&font=museo" alt="">
-                            <!-- <div class="fakeimg"></div> -->
+                            
                             <h4>Product Two</h4>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae magnam inventore
                                 labore iure aperiam necessitatibus, nobis a doloribus accusamus maiores iste iusto
@@ -434,16 +434,22 @@
                         <p class="name-bg">CSS</p>
                         <pre>
                             <code class="language-css line-numbers" data-prismjs-copy="Copy">
-                                .container {
-                                 container-type: inline-size:
+                                /*Put container-type and container-name at the parent element*/
+                                .container-example {
+                                 container-type: inline-size;
                                  container-name: product-card;
                                     }
 
-                                @container product-card (min-width: 700px) {
-                                    
-                                    h2 {
-                                        color: aliceblue
-                                        font-weight: 300;
+                                /* If the container is larger than 500px */
+                                @container product-card (min-width: 500px) {
+
+                                    .product-one p {
+                                        background-color: #0000ff29;
+                                        color: #fff;
+                                    }
+                                
+                                    .product-two button {
+                                        background-color: red;
                                     }
                                 }
                             </code>
@@ -451,16 +457,19 @@
                         <br>
                         <pre>
                     <code class="language-css line-numbers" data-prismjs-copy="Copy">
-
-                                .container {
-                                    container: product-card / inline-size
+                                .container-example {
+                                    container: product-card / inline-size; /*Shorthand container syntax*/
                                 }
 
-                                @container product-card (min-width: 700px) {
-                                    
-                                    h2 {
-                                        color: aliceblue
-                                        font-weight: 300;
+                                @container product-card (min-width: 500px) {
+
+                                    .product-one p {
+                                        background-color: #0000ff29;
+                                        color: #fff;
+                                    }
+                                
+                                    .product-two button {
+                                        background-color: red;
                                     }
                                 }
                             </code>
