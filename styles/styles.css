@@ -186,7 +186,9 @@ Prism Code
 
 pre.language-css {
     margin: 0;
+    font-size: 1.2rem;
 }
+
 
 /*
 ===========================
@@ -264,12 +266,16 @@ Dynamic viewport
 
 .list {
 
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    justify-content: start;
+    justify-content: space-evenly;
+    padding: 0;
 
     & li {
-        margin: 1rem;
+        background-color: whitesmoke;
+        padding: 1rem;
+        border-radius: 8px;
     }
 }
 
@@ -290,6 +296,7 @@ Container Queries
     border-radius: 1rem;
     background-color: rgba(100, 148, 237, 0.234);
     container-type: inline-size;
+    container-name: product-card;
 }
 
 .product-one,
@@ -336,7 +343,7 @@ Container Queries
     }
 }
 
-@container (min-width: 500px) {
+@container product-card (min-width: 500px) {
 
     .product-one p {
        
@@ -381,6 +388,10 @@ Side bar
     text-transform: uppercase;
 }
 
+.side-bar a:visited{
+    color: rgb(28, 28, 28);
+}
+
 /* START -- STYLES FOR MOBILE MENU */
 /* we will cover this more later */
 .side-bar ul {
@@ -396,7 +407,7 @@ Side bar
     display: block;
     background-color: transparent;
     border: 0;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .menu-toggle:focus {
