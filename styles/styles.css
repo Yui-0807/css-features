@@ -493,14 +493,14 @@ Accent-color Demo
  */
 
 /* body pages */
-.sheet {
+/* .sheet {
     height: 100vh;
     text-align: center;
 
-}
+} */
 
 /* accent colour */
-.form {
+/* .form {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -511,11 +511,9 @@ Accent-color Demo
     padding: 2rem;
     border-radius: 10px;
 
-    /* Demo */
-
     accent-color: red;
 
-}
+} */
 
 
 
@@ -525,11 +523,11 @@ Dynamic Viewport Demo - dvh
 ===========================
  */
 
-.one {
+/* .one {
     background-color: gray;
     height: 100dvh;
     border: 10px solid blue;
-}
+} */
 
     
  /*
@@ -542,7 +540,7 @@ Container Query
 /* start from 1000px */
 
 /* container Query */
-.container-query-demo {
+/* .container-query-demo {
     background-color: rgba(144, 238, 144, 0.3);
     width: 80%;
     margin: 0rem auto;
@@ -551,19 +549,15 @@ Container Query
     justify-content: center;
     border-radius: 0.625rem;
 
-    /* types in code below during demo */
-    /* container properties */
-
-
     container-type: inline-size;
     container-name: query-container;
-}
+} */
 
-.container-section {
+/* .container-section {
     margin: 1rem;
     padding: 3rem;
     height: 50%;
-    /* width: auto; */
+   
     background-color: green;
     border-radius: 10px;
 
@@ -575,9 +569,9 @@ Container Query
         width: 70%;
         margin: 1rem auto;
     }
-}
+} */
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
 
     .section--with {
         background-color: rgba(0, 0, 255, 0.152);
@@ -585,15 +579,13 @@ Container Query
         color: green;
     }
 
-}
+} */
 
-/* type in code below during demo */
-
-@container query-container (min-width:800px) {
+/* @container query-container (min-width:800px) {
 
     .section-query {
         background-color: pink;
         color: black;
     }
 
-}
+} */
