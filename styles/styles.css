@@ -502,7 +502,7 @@ Accent-color Demo
 
     /* Demo */
 
-    /* accent-color: red; */
+    accent-color: red;
 
 }
 
@@ -516,7 +516,7 @@ Dynamic Viewport Demo - dvh
 
 .one {
     background-color: gray;
-    height: 100vh;
+    height: 100dvh;
     border: 10px solid blue;
 }
 
@@ -544,8 +544,8 @@ Container Query
     /* container properties */
 
 
-    /* container-type: inline-size;
-    container-name: query-container; */
+    container-type: inline-size;
+    container-name: query-container;
 }
 
 .container-section {
@@ -577,7 +577,7 @@ Container Query
 }
 
 /* type in code below during demo */
-/* 
+
 @container query-container (min-width:800px) {
 
     .section-query {
@@ -585,4 +585,4 @@ Container Query
         color: black;
     }
 
-} */
+}
